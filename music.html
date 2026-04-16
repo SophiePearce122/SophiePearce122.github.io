@@ -1,9 +1,32 @@
 <html>
   <head>
+    <style>
+      body {
+        background-color: lightblue;
+        text-align: center;
+      }
+      h1 {
+        font-family: 'Trebuchet MS', sans-serif;
+        color: #333;
+        margin: 20px 0;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+      }
+      section {
+        text-align: center;
+      }
+      a {
+        font-family: 'Trebuchet MS', sans-serif;
+        color: black;
+      }
+    </style>
     <title>Music</title>
   </head>
   <body>
     <nav style="background:#f4f4f4;padding:12px;text-align:center;">
+      <img src="images/logo2.png" alt="Logo 2" width="40" height="40" style="vertical-align:middle; margin-right:10px;">
       <a href="index.html" style="margin:0 10px;">Home</a>
       <a href="about.html" style="margin:0 10px;">About</a>
       <a href="graphics.html" style="margin:0 10px;">Work</a>
@@ -13,17 +36,17 @@
     <hr>
     <h1>Music</h1>
     <p>Here is my music projects.</p>
-    <div style="margin-top:20px;">
-      <section style="margin-bottom:20px;">
+    <div style="margin-top:20px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+      <section style="flex:1 1 300px; max-width:500px;">
         <h2>New Revision</h2>
-        <audio controls style="width:100%;max-width:500px;">
+        <audio controls style="display:block; margin:0 auto; width:100%;">
           <source src="audio/New_Revision.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </section>
-      <section>
+      <section style="flex:1 1 300px; max-width:500px;">
         <h2>Remix Final</h2>
-        <audio controls style="width:100%;max-width:500px;">
+        <audio controls style="display:block; margin:0 auto; width:100%;">
           <source src="audio/Remixfinal.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
